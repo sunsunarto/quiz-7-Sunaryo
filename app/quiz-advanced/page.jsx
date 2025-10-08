@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import { Button, Modal, Tabs, Collapse, message } from 'antd';
+import { Button, Modal, Tabs, Collapse, message, Divider } from 'antd';
 
 const { TabPane } = Tabs;
 const { Panel } = Collapse;
@@ -20,7 +20,7 @@ const QuizAdvanced = () => {
       <Button type="primary" onClick={showModal}>
         Show Info
       </Button>
-
+      <Divider>Modal Tabs</Divider>
       <Modal
         title="Information"
         visible={isModalVisible}
